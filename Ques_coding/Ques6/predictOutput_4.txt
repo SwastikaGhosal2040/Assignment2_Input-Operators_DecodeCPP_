@@ -1,0 +1,23 @@
+Find the output of the below code
+#include <iostream>
+using namespace std;
+int main()
+{
+int i = ( 4 + 7 / 5 * 6 * 6+9 )% 100 ;
+cout<<i;
+}
+
+Output of the code should be:
+49
+
+Explanation:
+Order of precedence: () > / * > + -
+In the expression
+first the expression inside the () will be executed as it has highest precedence.
+ / and * have same precedence and left to right associative, so first we should operate /, then *.
+= (4 + 1 * 6 * 6 + 9) % 100
+= (4 + 6 * 6 + 9) % 100
+= (4 + 36 + 9) % 100
+= 49 % 100
+= 49
+ 

@@ -1,0 +1,28 @@
+Find the output for this code. Let input:- 3 2
+#include <iostream>
+using namespace std;
+int main()
+{
+int x;
+cout<<"Enter first number\n";
+cin>>x; // user will give 'x' a value.
+int y;
+cout<<"Enter second number\n";
+cin>>y; // user will give 'y' a value.
+cout<<(x!=y)<<" "<<(x>=y);
+}
+
+The output for this code should be:
+Enter first number
+3
+Enter second number
+2
+1 1
+
+Explanation:
+In the memory of the computer, a 4 bytes place is created for int x and inside x, value 3 is placed.
+In the memory of the computer, a 4 bytes place is created for int y and inside y, value 2 is placed.
+Now, 2 conditions are there:
+(x!=y) -> (3!=2) -> True -> prints 1
+(x>=y) -> (3>=2) -> True -> prints 1
+So, 1 1 is printed

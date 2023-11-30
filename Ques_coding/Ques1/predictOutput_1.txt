@@ -1,0 +1,31 @@
+Find the output for this code. Let input:- 2 3 6
+#include <iostream>
+using namespace std;
+int main()
+{
+int x;
+cout << "Enter first number\n";
+cin >> x; // user will give ‘x’ a value.
+int y, m;
+cout << "Enter second number and value for taking modulus\n";
+cin >> y >> m; // user will give ‘y’ a value.
+int Z = (x * y) % m;
+cout << "Output is: " << Z;
+}
+
+Ans:
+ Output for this code should be: 
+Enter first number:
+2
+Enter second number and value for taking modulus:
+3 6
+Output is: 0
+
+Explanation:
+In the memory of the computer, a 4 bytes place is created for int x and inside x, value 2 is placed.
+In the memory of the computer, a 4 bytes place is created for int y and inside y, value 3 is placed.
+In the memory of the computer, a 4 bytes place is created for int m and inside m, value 6 is placed.
+In the memory of the computer, a 4 bytes place is created for int Z and inside Z, value (x * y) % m should be placed.
+Calculating:(x * y) % m = (2 * 3) % 6 = 6 % 6 = 0
+So, inside Z, 0 value will be placed.
+
